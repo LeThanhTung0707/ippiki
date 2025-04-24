@@ -1,6 +1,6 @@
 import React from "react";
 import { InfoRow } from "../molecules";
-import { GeoInfo } from "../templates";
+import { GeoInfo } from "@/types";
 
 type Props = {
   ipv4: string | null;

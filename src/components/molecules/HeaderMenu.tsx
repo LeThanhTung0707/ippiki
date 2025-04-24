@@ -14,7 +14,7 @@ const HeaderMenu: React.FC = () => {
     },
     {
       name: "DNS Lookup",
-      href: "/",
+      href: "/dns-lookup",
     },
   ];
   return (

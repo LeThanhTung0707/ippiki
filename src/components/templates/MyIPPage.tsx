@@ -1,16 +1,8 @@
+import { GeoInfo } from "@/types";
 import { SectionTitle } from "../atoms";
 import { MapGG } from "../molecules";
 import { IPDetailsCard } from "../organisms";
-export type GeoInfo = {
-  ip: string;
-  city?: string;
-  region?: string;
-  country?: string;
-  org?: string;
-  loc: string;
-  timezone: string;
-  postal: string;
-};
+
 interface Props {
   title: string;
   subtitle: string;

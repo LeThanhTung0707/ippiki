@@ -1,17 +1,9 @@
 "use client";
 
 import { MyIpPage } from "@/components/templates";
+import { GeoInfo } from "@/types";
 import { useEffect, useState } from "react";
-type GeoInfo = {
-  ip: string;
-  city?: string;
-  region?: string;
-  country?: string;
-  org?: string;
-  loc: string;
-  timezone: string;
-  postal: string;
-};
+
 export default function Home() {
   const [ipv4, setIPv4] = useState<string | null>(null);
   const [ipv6, setIPv6] = useState<string | null>(null);
