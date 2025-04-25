@@ -16,6 +16,7 @@ const HeaderMenuItem: React.FC<props> = ({ menus }) => {
               display: "block",
               fontSize: 18,
               fontWeight: 600,
+              marginRight: 2,
             }}
           >
             {menu.name}

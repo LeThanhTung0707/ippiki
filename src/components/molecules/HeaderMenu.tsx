@@ -13,13 +13,13 @@ const HeaderMenu: React.FC = () => {
       href: "/",
     },
     {
-      name: "DNS Lookup",
-      href: "/dns-lookup",
+      name: "All Tools",
+      href: "/tools",
     },
   ];
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container className="!max-w-[1920px]">
         <Toolbar disableGutters>
           <HeaderMenuItemMobile menus={menus} />
           <HeaderMenuItem menus={menus} />
