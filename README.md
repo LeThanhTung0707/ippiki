@@ -1,6 +1,44 @@
-# IP-PIKI APP
+# 🛠️ Developer Toolkit
 
-## Getting Started
+All-in-one toolkit for developers – test, debug, and convert with ease.
+
+> Built with **Next.js**, **Tailwind CSS**, **Material UI**, and designed with **Atomic Design** principles.
+
+---
+
+## 🧰 Available Tools
+
+- **JSON Formatter** – Beautify and validate JSON
+- **JWT Decoder** – Decode token and inspect payload
+- **Base64 Encode/Decode**
+- **Hash Generator** – SHA256, MD5, etc.
+- **UUID Generator**
+- **Regex Tester**
+- **IP Check**, **DNS Lookup**, **Ping**, **WHOIS**, **Geolocation**
+- **SSL Checker**, **Header Viewer**, **Redirect Tracer**
+- **Cron Parser**, **Time Converter**
+
+> More tools coming soon...
+
+---
+
+## 🖼️ UI Preview
+
+![preview](public/preview.png)
+
+---
+
+## 🧑‍💻 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Material UI](https://mui.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)
+
+---
+
+## 🧩 Development
 
 Run the development server:
 
