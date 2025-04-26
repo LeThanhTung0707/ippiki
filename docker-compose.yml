@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  devtools-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: ${NODE_ENV}
+    container_name: devtools-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=${NODE_ENV}
+    env_file:
+      - .env
+    restart: always
