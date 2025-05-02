@@ -19,7 +19,11 @@ import BuildIcon from "@mui/icons-material/Build";
 import LanguageIcon from "@mui/icons-material/Language";
 import LockIcon from "@mui/icons-material/Lock";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
+import PaletteIcon from "@mui/icons-material/Palette";
+import StorageIcon from "@mui/icons-material/Storage";
+
 import { SvgIconComponent } from "@mui/icons-material";
+
 type Tool = {
   name: string;
   description: string;
@@ -30,12 +34,16 @@ export type ToolGroup = {
   category: string;
   tools: Tool[];
 };
+
 const categoryIcons: { [key: string]: SvgIconComponent } = {
   "Dev Tools": BuildIcon,
+  "Frontend Tools": PaletteIcon,
+  "Backend Tools": StorageIcon,
   "IP & Network Tools": LanguageIcon,
   "Security & Encoding Tools": LockIcon,
   "Miscellaneous Tools": MiscellaneousServicesIcon,
 };
+
 const toolIcons: { [key: string]: SvgIconComponent } = {
   "JSON Formatter": JsonIcon,
   "JWT Decoder": JwtIcon,
@@ -88,6 +96,76 @@ const groupedTools: ToolGroup[] = [
         name: "Regex Tester",
         description: "Test and debug regular expressions",
         path: "/tools/regex-tester",
+      },
+    ],
+  },
+  {
+    category: "Frontend Tools",
+    tools: [
+      {
+        name: "CSS Minifier",
+        description: "Minify and compress your CSS code",
+        path: "/tools/css-minifier",
+      },
+      {
+        name: "Color Converter",
+        description: "Convert between HEX, RGB, and HSL",
+        path: "/tools/color-converter",
+      },
+      {
+        name: "Lorem Ipsum Generator",
+        description: "Generate placeholder text for designs",
+        path: "/tools/lorem-ipsum",
+      },
+      {
+        name: "Image to Base64",
+        description: "Convert image files to base64 format",
+        path: "/tools/image-to-base64",
+      },
+      {
+        name: "Unit Converter",
+        description: "Convert between px, em, rem, and more",
+        path: "/tools/unit-converter",
+      },
+      {
+        name: "Favicon Generator",
+        description: "Create favicon from image files",
+        path: "/tools/favicon-generator",
+      },
+    ],
+  },
+  {
+    category: "Backend Tools",
+    tools: [
+      {
+        name: "JWT Decoder",
+        description: "Inspect the content of JWT tokens",
+        path: "/tools/jwt-decoder",
+      },
+      {
+        name: "Cron Parser",
+        description: "Convert cron syntax into readable format",
+        path: "/tools/cron-parser",
+      },
+      {
+        name: "UUID Generator",
+        description: "Generate unique UUIDs",
+        path: "/tools/uuid-generator",
+      },
+      {
+        name: "Password Generator",
+        description: "Generate secure random passwords",
+        path: "/tools/password-generator",
+      },
+      {
+        name: "Timestamp Converter",
+        description: "Convert timestamps to human-readable dates",
+        path: "/tools/timestamp-converter",
+      },
+      {
+        name: "JSON Validator",
+        description: "Validate and inspect JSON syntax",
+        path: "/tools/json-validator",
       },
     ],
   },
@@ -157,6 +235,7 @@ const groupedTools: ToolGroup[] = [
     ],
   },
 ];
+
 const Tools: React.FC = () => {
   const title = "Dev Toolbox";
   const subtitle =
@@ -171,4 +250,5 @@ const Tools: React.FC = () => {
     />
   );
 };
+
 export default Tools;
